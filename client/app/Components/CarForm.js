@@ -5,7 +5,7 @@ import { Car } from "../Models/Car.js";
 export function getCarForm(car = new Car({})) {
     let submitAction = 'app.carsController.createCar()'
     if(car.id){
-        submitAction = `app.carsController.editCar('${car.id})`
+        submitAction = `app.carsController.editCar('${car.id}')`
     }
 
     return `
