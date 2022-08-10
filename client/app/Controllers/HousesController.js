@@ -35,6 +35,7 @@ export class HousesController{
 
   async createHouse(){
     try {
+      
       window.event.preventDefault()
       let form = window.event.target
       let newHouse = {
@@ -70,13 +71,14 @@ export class HousesController{
   
   async editHouse(houseId){
     try {
+      debugger
       window.event.preventDefault()
       let form = window.event.target
       let houseData = {
         id: houseId,
         levels: form.levels.value,
         bedrooms: form.bedrooms.value,
-        yearbuilt: form.yearbuilt.value,
+        year: form.year.value,
         price: form.price.value,
         img: form.img.value,
         description: form.description.value
