@@ -41,7 +41,7 @@ export class HousesController{
         levels: form.levels.value,
         bedrooms: form.bedrooms.value,
         bathrooms: form.bathrooms.value,
-        year: form.yearbuilt.value,
+        year: form.year.value,
         price: form.price.value,
         img: form.img.value,
         description: form.description.value,
